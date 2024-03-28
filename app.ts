@@ -9,10 +9,11 @@ app.use(
     })
   );
   
-app.use(bodyParser.json());
-
 app.get('/',(req,res)=>{
     res.send('file_upload_api')
 })
+  
+app.use(bodyParser.json());
+
 
 module.exports = app;
